@@ -73,8 +73,8 @@ namespace Scheduler_Code
                         //Console.WriteLine();
                         //test_arr_values(names_arr, processes_number);
 
-                        /** output printing **/
-                        Print_FCFS(key_arr, values_arr, names_arr, waiting_arr);
+                        /** output printing on console **/
+                        //Print_FCFS(key_arr, values_arr, names_arr, waiting_arr);
 
                         /** assign values into two lists for the GUI **/
                         List<double> timing_list = new List<double>();
@@ -251,6 +251,8 @@ namespace Scheduler_Code
                         List<double> timing_list = new List<double>();
                         List<string> naming_list = new List<string>();
                         assign_RR(key_arr, values_arr, names_arr, waiting_arr, Quantum, timing_list, naming_list);
+                        
+                        /** test : print output to console form 2 lists, naming & timing **/
                         //for (int i = 0; i < naming_list.Count(); i++)
                         //{// must be naming_list.Count() > related to timing_list[i+1] as timing list.count = naming list.count + 1
                         //    if (i == 0)
